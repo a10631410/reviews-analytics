@@ -7,8 +7,9 @@ with open ('reviews.txt' , 'r') as f:
 		if count % 1000 == 0:
 			print(len(data))
 print(len(data))
-print(data[0])
-print('-------')
-print(data[1])
+sum_len = 0
+for d in data:
+	sun_len = sun_len + len(d)
+	print(sun_len)
 
 
